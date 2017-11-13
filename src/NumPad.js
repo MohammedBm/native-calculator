@@ -30,19 +30,19 @@ export default class NumPad extends React.Component {
           <Key symbol={'1'} echoSymbol={this._echoSymbol} />
           <Key symbol={'2'} echoSymbol={this._echoSymbol} />
           <Key symbol={'3'} echoSymbol={this._echoSymbol} />
-          <Key symbol={'/'} echoSymbol={this._echoSymbol} />
+          <Key op={true} symbol={'/'} echoSymbol={this._echoSymbol} />
         </View>
         <View style={styles.numgroup}>
           <Key symbol={'4'} echoSymbol={this._echoSymbol} />
           <Key symbol={'5'} echoSymbol={this._echoSymbol} />
           <Key symbol={'6'} echoSymbol={this._echoSymbol} />
-          <Key symbol={'*'} echoSymbol={this._echoSymbol} />
+          <Key op={true}  symbol={'*'} echoSymbol={this._echoSymbol} />
         </View>
         <View style={styles.numgroup}>
           <Key symbol={'7'} echoSymbol={this._echoSymbol} />
           <Key symbol={'8'} echoSymbol={this._echoSymbol} />
           <Key symbol={'9'} echoSymbol={this._echoSymbol} />
-          <Key symbol={'-'} echoSymbol={this._echoSymbol} />
+          <Key op={true}  symbol={'-'} echoSymbol={this._echoSymbol} />
         </View>
         <View style={styles.numgroup}>
           <Key op={true} symbol={'0'} echoSymbol={this._echoSymbol} />
@@ -58,8 +58,6 @@ export default class NumPad extends React.Component {
 const styles = StyleSheet.create({
   numpad: {
     flex: 4,
-    paddingRight: 20,
-    paddingLeft: 20,
     paddingTop: 8,
     paddingBottom: 8,
     backgroundColor: '#80cbc4'

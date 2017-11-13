@@ -33,18 +33,14 @@ export default class Key extends React.Component {
 
 const styles = StyleSheet.create({
   key: {
-    borderRadius: 30,
-    backgroundColor: '#b2fef7',
-    borderColor: '#0000ff',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
-    width: 60,
-    height: 60,
+    width: 100,
+    height: 100,
   },
   opkey: {
-    backgroundColor: '#4f9a94',
-    marginRight: 10,
-    justifyContent: 'center',
+    backgroundColor: '#FA982F',
     alignItems: 'center',
   },
   opkeytext: {
